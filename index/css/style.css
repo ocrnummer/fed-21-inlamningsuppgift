@@ -1,0 +1,461 @@
+/*      GENERAL      */
+
+body {
+    margin: 0;
+    background: lightgray ;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    
+    color: #1c2a29;
+
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    margin: 0;
+}
+
+.bg-white {
+    background-color: whitesmoke;
+}
+
+.padding {
+    padding: 2%;
+}
+
+
+
+/*      HEADER      */
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: lightgray;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    display: flex;
+    align-items: center;
+}
+
+.site-title:hover {
+    color: darkslategray;
+    transition: 0.3s;
+}
+
+.site-title p {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.linux-logo-wrapper {
+    width: 10%;
+    height: auto;
+    margin: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linux-logo-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.hamburger-menu {
+    font-size: 2rem;
+    color: grey;
+    border: silver 1px solid;
+    border-radius: 10%;
+    padding: 1% 3%;
+
+    margin: 2%;
+}
+
+.nav-large {
+    display: none;
+}
+
+.nav-small {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-small a {
+    width: 100%;
+    height: 6vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    background-color: whitesmoke;
+    border: lightgray solid 1px;
+}
+
+.nav-small a:hover {
+    background-color: darkslategray;
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+
+
+/*      BODY        */
+
+/* Section 1 - Hero */
+
+.hero {
+    background-image: url(../img/welcome-img.jpg);
+    background-size: cover;
+
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    color: #1c2a29;
+}
+
+
+/* Section 2 - Linux OS */
+
+.os-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2% 0;
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+}
+
+.article-title {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.article-title h2 {
+    display: flex;
+    align-items: center;
+    margin: auto 5%;
+}
+
+.logo-wrapper {
+    width: 20%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.pop-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Section 3 - Linux Hardware */
+
+.linux-hardware h2 {
+    text-align: center;
+}
+
+.hardware-articles article {
+    width: 100%;
+    margin: 2% 0 0 0;
+}
+
+.hardware-article-wrapper {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hardware-heading {
+    text-align: center;
+}
+
+
+
+/*      FOOTER      */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    font-size: 0.8rem;
+}
+
+.footer-content {
+    margin: 1vw;
+
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 576px) {
+
+    /*      GENERAL      */
+
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    /*      HEADER       */
+
+    .header-wrapper {
+        margin: auto;
+    }
+    
+
+    .linux-logo-wrapper {
+        margin: 2%;
+    }
+
+    .nav-small {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin: auto;
+    }
+    
+    .nav-small a {
+        width: 49.5%;
+    }
+
+
+
+    /*      MAIN         */
+
+    /* Section 1 - Hero */
+
+    /* Section 2 - Linux OS */
+
+    .linux-os {
+        width: 95%;
+        margin: auto;
+    }
+
+    .article {
+        flex-direction: row;
+        margin: 2% 0;
+    }
+
+    .article:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .screenshot {
+        object-fit: cover;
+
+        max-width: 50%;
+        max-height: 100%;
+    }
+
+    .article-content {
+        width: 50%;
+
+    }
+
+    .pop-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .pop-flex div {
+        width: 40%;
+    }
+    
+
+    /* Section 3 - Linux Hardware */
+
+    .linux-hardware {
+        width: 95%;
+        /* margin: auto; */
+    }
+
+    .hardware-articles {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hardware-articles article {
+        width: 50%;
+        padding: 2% 0;
+        margin: 1% 0 0 0;
+    }
+
+    .icon {
+        font-size: 10vw;
+    }
+
+        /*      FOOTER       */
+
+        footer {
+            font-size: 1rem;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1100px) {
+
+    /*      GENERAL      */
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    
+    /*      HEADER       */
+
+    .header-wrapper {
+        flex-direction: row;
+        justify-content: flex-start;
+
+        width: 80%;
+    }
+
+    .site-title p {
+        font-size: 1.5rem;
+    }
+
+    .nav-small {
+        display: none;
+    }
+
+    .nav-large {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        width: 100%;
+    }
+
+    .nav-large a {
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav-large a:hover {
+        color: darkslategray;
+        transition: 0.2s;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+
+    /*      MAIN         */
+
+    /* Section 1 - Hero */
+
+    .hero {
+        height: 60vh;
+    }
+
+    /* Section 2 - Linux OS */
+
+    .linux-os {
+        width: 80%;
+        margin: auto;
+    }
+
+    .pop-flex div {
+        width: 50%;
+    }
+
+
+    /* Section 3 - Linux Hardware */
+
+    .linux-hardware {
+        width: 80%;
+        margin: auto;
+    }
+
+}
